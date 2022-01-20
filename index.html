@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ar">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,55 +8,565 @@
     <title>Home</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/fontawesome/css/all.css">
 </head>
+
 <body>
 
     <!-- Header -->
- <header>
-    <nav class ="container" dir="rtl" >
-        <a href="login.html"> <h3 class ="box" > ادخل حسابك أو سجل الآن </h3> </a>
-        <div class ="box" > المفضلة </div>
-        <div class ="box" > تتبع الشحنة </div>
-        <div class ="box" > المساعدة </div>
-        <div class ="box" > English </div>
-    </nav>
+    <header>
+        <nav class="container" id="header1" dir="rtl">
+            <a href="login.html">
+                <h3 class="fas fa-user box"> ادخل حسابك أو سجل الآن </h3>
+            </a>
+            <div class="box"> المفضلة </div>
+            <div class="box"> تتبع الشحنة </div>
+            <div class="box"> المساعدة </div>
+            <div class="box"> English </div>
+        </nav>
 
-    <nav class="container" id="nav2">
-        <h2> CART </h2>
-        <div>
-            <button> بحث </button>
-            <input type="search" placeholder="البحث" dir="rtl">
+        <nav class="container">
+            <a href="#"> <img src="images/logo.svg" id="logo"> </a>
+            <input type="search" placeholder="البحث" dir="rtl" id="type">
+            <h2 class="fas fa-shopping-cart" id="cart"> </h2>
+        </nav>
+    </header>
+
+    <!-- Slider -->
+    <div class="section">
+        <img src="images/Item1.webp" id="item1" />
+        <img src="images/Item2.jpg" id="item2" />
+        <img src="images/Item3.jpg" id="item3" />
+        <img src="images/Item4.jpg" id="item4" />
+        <img src="images/Item5.webp" id="item5" />
+        <img src="images/Item6.jpg" id="item6" />
+    </div>
+
+
+
+    <!-- Main Category -->
+    <div dir="rtl">
+        <h2 style=" color: #603128 ;"> تصفح حسب القسم</h2>
+        <div class="container" dir="rtl">
+            <div class="category" style="color: #5e2f26;">
+                <i class="fas fa-tv"></i>
+                 دين </div>
+            <div class="category" style="color: #f67929;">
+                <i class="fas fa-calendar"></i>
+                تاريخ </div>
+            <div class="category" style="color: #76689a">
+                <i class="fas fa-calendar"></i>
+                 روايات </div>
+            <div class="category" style="color: #cb3278 ">
+                <i class="fab fa-old-republic"></i>
+                 سياسة </div>
+            <div class="category" style="color: #ffd43b ">
+                <i class="fas fa-briefcase"></i>
+                 اقتصاد </div>
+            <div class="category" style="color:yellowgreen ">
+                <i class="fab fa-old-republic"></i>
+                طبخ </div>
         </div>
-       <a href="#"> <img src="images/logo.svg" id="logo" > </a>
-    
-    </nav>
-</header>
-
-<!-- Slider -->
-<div class="section">
-    <img src="images/Item1.webp" id="item1"/>
-    <img src="images/Item2.jpg" id="item2"/>
-    <img src="images/Item3.jpg" id="item3"/>
-    <img src="images/Item4.jpg" id="item4"/>
-    <img src="images/Item5.webp" id="item5"/>
-    <img src="images/Item6.jpg" id="item6"/>
-</div>
-
-
-
-<!-- Footer -->
-<footer dir="rtl">
-    <div class="container" id="first">
-        <div class ="" >انضم إلى نشرتنا البريدية </div>
-        <div class ="" > خدمة العملاء</div>
-        <div class ="" > خدمات جرير</div>
-        <div class ="" > روابط سريعة </div>
-        <div class ="" > عن جرير </div>
     </div>
 
-    <div id="second" >
+    <!-- Sub Category -->
+
+    <div class="spacing" style="margin-top: 100px;">
 
     </div>
-</footer>
+    <div class="type" dir="rtl" id="religion">
+        <h2 style=" color: #000 ;"> الكتب الدينية </h2>
+        <div class="container" dir="rtl">
+            <div class="cate">
+                <img src="img/b10.jpg" class="bimg">
+                <h3 class="bname"> كتاب إلكتروني </h3>
+                <p class="desc"> وصف الكتاب ي سعم </p>
+                <p class="price"> 19.99ر.س</p>
+                <p class="tax"> شامل الضريبة </p>
+                <p class="copies"> صيغ أخرى</p>
+                <footer class="toCart">
+                    <i class="fas fa-star icons"></i>
+                    <div class="fas fa-shopping-cart" id="redCart"> </div>
+                    <i class="fas fa-download icons"></i>
+                </footer>
+            </div>
+
+            <div class="cate">
+                <img src="img/b10.jpg" class="bimg">
+                <h3 class="bname"> كتاب إلكتروني </h3>
+                <p class="desc"> وصف الكتاب ي سعم </p>
+                <p class="price"> 19.99ر.س</p>
+                <p class="tax"> شامل الضريبة </p>
+                <p class="copies"> صيغ أخرى</p>
+                <footer class="toCart">
+                    <i class="fas fa-star icons"></i>
+                    <div class="fas fa-shopping-cart" id="redCart"> </div>
+                    <i class="fas fa-download icons"></i>
+                </footer>
+            </div>
+
+            <div class="cate">
+                <img src="img/b10.jpg" class="bimg">
+                <h3 class="bname"> كتاب إلكتروني </h3>
+                <p class="desc"> وصف الكتاب ي سعم </p>
+                <p class="price"> 19.99ر.س</p>
+                <p class="tax"> شامل الضريبة </p>
+                <p class="copies"> صيغ أخرى</p>
+                <footer class="toCart">
+                    <i class="fas fa-star icons"></i>
+                    <div class="fas fa-shopping-cart" id="redCart"> </div>
+                    <i class="fas fa-download icons"></i>
+                </footer>
+            </div>
+
+            <div class="cate">
+                <img src="img/b10.jpg" class="bimg">
+                <h3 class="bname"> كتاب إلكتروني </h3>
+                <p class="desc"> وصف الكتاب ي سعم </p>
+                <p class="price"> 19.99ر.س</p>
+                <p class="tax"> شامل الضريبة </p>
+                <p class="copies"> صيغ أخرى</p>
+                <footer class="toCart">
+                    <i class="fas fa-star icons"></i>
+                    <div class="fas fa-shopping-cart" id="redCart"> </div>
+                    <i class="fas fa-download icons"></i>
+                </footer>
+            </div>
+
+            <div class="cate">
+                <img src="img/b10.jpg" class="bimg">
+                <h3 class="bname"> كتاب إلكتروني </h3>
+                <p class="desc"> وصف الكتاب ي سعم </p>
+                <p class="price"> 19.99ر.س</p>
+                <p class="tax"> شامل الضريبة </p>
+                <p class="copies"> صيغ أخرى</p>
+                <footer class="toCart">
+                    <i class="fas fa-star icons"></i>
+                    <div class="fas fa-shopping-cart" id="redCart"> </div>
+                    <i class="fas fa-download icons"></i>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+    <div class="spacing" style="margin-top: 100px;">
+
+    </div>
+    <div class="type" dir="rtl" id="cal">
+        <h2 style=" color: #000 ;">الكتب التاريخية </h2>
+        <div class="container" dir="rtl">
+            <div class="cate">
+                <img src="img/b10.jpg" class="bimg">
+                <h3 class="bname"> كتاب إلكتروني </h3>
+                <p class="desc"> وصف الكتاب ي سعم </p>
+                <p class="price"> 19.99ر.س</p>
+                <p class="tax"> شامل الضريبة </p>
+                <p class="copies"> صيغ أخرى</p>
+                <footer class="toCart">
+                    <i class="fas fa-star icons"></i>
+                    <div class="fas fa-shopping-cart" id="redCart"> </div>
+                    <i class="fas fa-download icons"></i>
+                </footer>
+            </div>
+
+            <div class="cate">
+                <img src="img/b10.jpg" class="bimg">
+                <h3 class="bname"> كتاب إلكتروني </h3>
+                <p class="desc"> وصف الكتاب ي سعم </p>
+                <p class="price"> 19.99ر.س</p>
+                <p class="tax"> شامل الضريبة </p>
+                <p class="copies"> صيغ أخرى</p>
+                <footer class="toCart">
+                    <i class="fas fa-star icons"></i>
+                    <div class="fas fa-shopping-cart" id="redCart"> </div>
+                    <i class="fas fa-download icons"></i>
+                </footer>
+            </div>
+
+            <div class="cate">
+                <img src="img/b10.jpg" class="bimg">
+                <h3 class="bname"> كتاب إلكتروني </h3>
+                <p class="desc"> وصف الكتاب ي سعم </p>
+                <p class="price"> 19.99ر.س</p>
+                <p class="tax"> شامل الضريبة </p>
+                <p class="copies"> صيغ أخرى</p>
+                <footer class="toCart">
+                    <i class="fas fa-star icons"></i>
+                    <div class="fas fa-shopping-cart" id="redCart"> </div>
+                    <i class="fas fa-download icons"></i>
+                </footer>
+            </div>
+
+            <div class="cate">
+                <img src="img/b10.jpg" class="bimg">
+                <h3 class="bname"> كتاب إلكتروني </h3>
+                <p class="desc"> وصف الكتاب ي سعم </p>
+                <p class="price"> 19.99ر.س</p>
+                <p class="tax"> شامل الضريبة </p>
+                <p class="copies"> صيغ أخرى</p>
+                <footer class="toCart">
+                    <i class="fas fa-star icons"></i>
+                    <div class="fas fa-shopping-cart" id="redCart"> </div>
+                    <i class="fas fa-download icons"></i>
+                </footer>
+            </div>
+
+            <div class="cate">
+                <img src="img/b10.jpg" class="bimg">
+                <h3 class="bname"> كتاب إلكتروني </h3>
+                <p class="desc"> وصف الكتاب ي سعم </p>
+                <p class="price"> 19.99ر.س</p>
+                <p class="tax"> شامل الضريبة </p>
+                <p class="copies"> صيغ أخرى</p>
+                <footer class="toCart">
+                    <i class="fas fa-star icons"></i>
+                    <div class="fas fa-shopping-cart" id="redCart"> </div>
+                    <i class="fas fa-download icons"></i>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+    <div class="spacing" style="margin-top: 100px;">
+
+    </div>
+    <div class="type" dir="rtl" id="novels">
+        <h2 style=" color: #000 ;"> الروايات </h2>
+        <div class="container" dir="rtl">
+            <div class="cate">
+                <img src="img/b10.jpg" class="bimg">
+                <h3 class="bname"> كتاب إلكتروني </h3>
+                <p class="desc"> وصف الكتاب ي سعم </p>
+                <p class="price"> 19.99ر.س</p>
+                <p class="tax"> شامل الضريبة </p>
+                <p class="copies"> صيغ أخرى</p>
+                <footer class="toCart">
+                    <i class="fas fa-star icons"></i>
+                    <div class="fas fa-shopping-cart" id="redCart"> </div>
+                    <i class="fas fa-download icons"></i>
+                </footer>
+            </div>
+
+            <div class="cate">
+                <img src="img/b10.jpg" class="bimg">
+                <h3 class="bname"> كتاب إلكتروني </h3>
+                <p class="desc"> وصف الكتاب ي سعم </p>
+                <p class="price"> 19.99ر.س</p>
+                <p class="tax"> شامل الضريبة </p>
+                <p class="copies"> صيغ أخرى</p>
+                <footer class="toCart">
+                    <i class="fas fa-star icons"></i>
+                    <div class="fas fa-shopping-cart" id="redCart"> </div>
+                    <i class="fas fa-download icons"></i>
+                </footer>
+            </div>
+
+            <div class="cate">
+                <img src="img/b10.jpg" class="bimg">
+                <h3 class="bname"> كتاب إلكتروني </h3>
+                <p class="desc"> وصف الكتاب ي سعم </p>
+                <p class="price"> 19.99ر.س</p>
+                <p class="tax"> شامل الضريبة </p>
+                <p class="copies"> صيغ أخرى</p>
+                <footer class="toCart">
+                    <i class="fas fa-star icons"></i>
+                    <div class="fas fa-shopping-cart" id="redCart"> </div>
+                    <i class="fas fa-download icons"></i>
+                </footer>
+            </div>
+
+            <div class="cate">
+                <img src="img/b10.jpg" class="bimg">
+                <h3 class="bname"> كتاب إلكتروني </h3>
+                <p class="desc"> وصف الكتاب ي سعم </p>
+                <p class="price"> 19.99ر.س</p>
+                <p class="tax"> شامل الضريبة </p>
+                <p class="copies"> صيغ أخرى</p>
+                <footer class="toCart">
+                    <i class="fas fa-star icons"></i>
+                    <div class="fas fa-shopping-cart" id="redCart"> </div>
+                    <i class="fas fa-download icons"></i>
+                </footer>
+            </div>
+
+            <div class="cate">
+                <img src="img/b10.jpg" class="bimg">
+                <h3 class="bname"> كتاب إلكتروني </h3>
+                <p class="desc"> وصف الكتاب ي سعم </p>
+                <p class="price"> 19.99ر.س</p>
+                <p class="tax"> شامل الضريبة </p>
+                <p class="copies"> صيغ أخرى</p>
+                <footer class="toCart">
+                    <i class="fas fa-star icons"></i>
+                    <div class="fas fa-shopping-cart" id="redCart"> </div>
+                    <i class="fas fa-download icons"></i>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+    <div class="spacing" style="margin-top: 100px;">
+
+    </div>
+    <div class="type" dir="rtl" id="politics">
+        <h2 style=" color: #000 ;">سياسة</h2>
+        <div class="container" dir="rtl">
+            <div class="cate">
+                <img src="img/b10.jpg" class="bimg">
+                <h3 class="bname"> كتاب إلكتروني </h3>
+                <p class="desc"> وصف الكتاب ي سعم </p>
+                <p class="price"> 19.99ر.س</p>
+                <p class="tax"> شامل الضريبة </p>
+                <p class="copies"> صيغ أخرى</p>
+                <footer class="toCart">
+                    <i class="fas fa-star icons"></i>
+                    <div class="fas fa-shopping-cart" id="redCart"> </div>
+                    <i class="fas fa-download icons"></i>
+                </footer>
+            </div>
+
+            <div class="cate">
+                <img src="img/b10.jpg" class="bimg">
+                <h3 class="bname"> كتاب إلكتروني </h3>
+                <p class="desc"> وصف الكتاب ي سعم </p>
+                <p class="price"> 19.99ر.س</p>
+                <p class="tax"> شامل الضريبة </p>
+                <p class="copies"> صيغ أخرى</p>
+                <footer class="toCart">
+                    <i class="fas fa-star icons"></i>
+                    <div class="fas fa-shopping-cart" id="redCart"> </div>
+                    <i class="fas fa-download icons"></i>
+                </footer>
+            </div>
+
+            <div class="cate">
+                <img src="img/b10.jpg" class="bimg">
+                <h3 class="bname"> كتاب إلكتروني </h3>
+                <p class="desc"> وصف الكتاب ي سعم </p>
+                <p class="price"> 19.99ر.س</p>
+                <p class="tax"> شامل الضريبة </p>
+                <p class="copies"> صيغ أخرى</p>
+                <footer class="toCart">
+                    <i class="fas fa-star icons"></i>
+                    <div class="fas fa-shopping-cart" id="redCart"> </div>
+                    <i class="fas fa-download icons"></i>
+                </footer>
+            </div>
+
+            <div class="cate">
+                <img src="img/b10.jpg" class="bimg">
+                <h3 class="bname"> كتاب إلكتروني </h3>
+                <p class="desc"> وصف الكتاب ي سعم </p>
+                <p class="price"> 19.99ر.س</p>
+                <p class="tax"> شامل الضريبة </p>
+                <p class="copies"> صيغ أخرى</p>
+                <footer class="toCart">
+                    <i class="fas fa-star icons"></i>
+                    <div class="fas fa-shopping-cart" id="redCart"> </div>
+                    <i class="fas fa-download icons"></i>
+                </footer>
+            </div>
+
+            <div class="cate">
+                <img src="img/b10.jpg" class="bimg">
+                <h3 class="bname"> كتاب إلكتروني </h3>
+                <p class="desc"> وصف الكتاب ي سعم </p>
+                <p class="price"> 19.99ر.س</p>
+                <p class="tax"> شامل الضريبة </p>
+                <p class="copies"> صيغ أخرى</p>
+                <footer class="toCart">
+                    <i class="fas fa-star icons"></i>
+                    <div class="fas fa-shopping-cart" id="redCart"> </div>
+                    <i class="fas fa-download icons"></i>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+    <div class="spacing" style="margin-top: 100px;">
+
+    </div>
+    <div class="type" dir="rtl" id="economy">
+        <h2 style=" color: #000 ;">اقتصاد </h2>
+        <div class="container" dir="rtl">
+            <div class="cate">
+                <img src="img/b10.jpg" class="bimg">
+                <h3 class="bname"> كتاب إلكتروني </h3>
+                <p class="desc"> وصف الكتاب ي سعم </p>
+                <p class="price"> 19.99ر.س</p>
+                <p class="tax"> شامل الضريبة </p>
+                <p class="copies"> صيغ أخرى</p>
+                <footer class="toCart">
+                    <i class="fas fa-star icons"></i>
+                    <div class="fas fa-shopping-cart" id="redCart"> </div>
+                    <i class="fas fa-download icons"></i>
+                </footer>
+            </div>
+
+            <div class="cate">
+                <img src="img/b10.jpg" class="bimg">
+                <h3 class="bname"> كتاب إلكتروني </h3>
+                <p class="desc"> وصف الكتاب ي سعم </p>
+                <p class="price"> 19.99ر.س</p>
+                <p class="tax"> شامل الضريبة </p>
+                <p class="copies"> صيغ أخرى</p>
+                <footer class="toCart">
+                    <i class="fas fa-star icons"></i>
+                    <div class="fas fa-shopping-cart" id="redCart"> </div>
+                    <i class="fas fa-download icons"></i>
+                </footer>
+            </div>
+
+            <div class="cate">
+                <img src="img/b10.jpg" class="bimg">
+                <h3 class="bname"> كتاب إلكتروني </h3>
+                <p class="desc"> وصف الكتاب ي سعم </p>
+                <p class="price"> 19.99ر.س</p>
+                <p class="tax"> شامل الضريبة </p>
+                <p class="copies"> صيغ أخرى</p>
+                <footer class="toCart">
+                    <i class="fas fa-star icons"></i>
+                    <div class="fas fa-shopping-cart" id="redCart"> </div>
+                    <i class="fas fa-download icons"></i>
+                </footer>
+            </div>
+
+            <div class="cate">
+                <img src="img/b10.jpg" class="bimg">
+                <h3 class="bname"> كتاب إلكتروني </h3>
+                <p class="desc"> وصف الكتاب ي سعم </p>
+                <p class="price"> 19.99ر.س</p>
+                <p class="tax"> شامل الضريبة </p>
+                <p class="copies"> صيغ أخرى</p>
+                <footer class="toCart">
+                    <i class="fas fa-star icons"></i>
+                    <div class="fas fa-shopping-cart" id="redCart"> </div>
+                    <i class="fas fa-download icons"></i>
+                </footer>
+            </div>
+
+            <div class="cate">
+                <img src="img/b10.jpg" class="bimg">
+                <h3 class="bname"> كتاب إلكتروني </h3>
+                <p class="desc"> وصف الكتاب ي سعم </p>
+                <p class="price"> 19.99ر.س</p>
+                <p class="tax"> شامل الضريبة </p>
+                <p class="copies"> صيغ أخرى</p>
+                <footer class="toCart">
+                    <i class="fas fa-star icons"></i>
+                    <div class="fas fa-shopping-cart" id="redCart"> </div>
+                    <i class="fas fa-download icons"></i>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+    <div class="spacing" style="margin-top: 100px;">
+
+    </div>
+    <div class="type" dir="rtl" id="cook">
+        <h2 style=" color: #000 ;">طبخ </h2>
+        <div class="container" dir="rtl">
+            <div class="cate">
+                <img src="img/b10.jpg" class="bimg">
+                <h3 class="bname"> كتاب إلكتروني </h3>
+                <p class="desc"> وصف الكتاب ي سعم </p>
+                <p class="price"> 19.99ر.س</p>
+                <p class="tax"> شامل الضريبة </p>
+                <p class="copies"> صيغ أخرى</p>
+                <footer class="toCart">
+                    <i class="fas fa-star icons"></i>
+                    <div class="fas fa-shopping-cart" id="redCart"> </div>
+                    <i class="fas fa-download icons"></i>
+                </footer>
+            </div>
+
+            <div class="cate">
+                <img src="img/b10.jpg" class="bimg">
+                <h3 class="bname"> كتاب إلكتروني </h3>
+                <p class="desc"> وصف الكتاب ي سعم </p>
+                <p class="price"> 19.99ر.س</p>
+                <p class="tax"> شامل الضريبة </p>
+                <p class="copies"> صيغ أخرى</p>
+                <footer class="toCart">
+                    <i class="fas fa-star icons"></i>
+                    <div class="fas fa-shopping-cart" id="redCart"> </div>
+                    <i class="fas fa-download icons"></i>
+                </footer>
+            </div>
+
+            <div class="cate">
+                <img src="img/b10.jpg" class="bimg">
+                <h3 class="bname"> كتاب إلكتروني </h3>
+                <p class="desc"> وصف الكتاب ي سعم </p>
+                <p class="price"> 19.99ر.س</p>
+                <p class="tax"> شامل الضريبة </p>
+                <p class="copies"> صيغ أخرى</p>
+                <footer class="toCart">
+                    <i class="fas fa-star icons"></i>
+                    <div class="fas fa-shopping-cart" id="redCart"> </div>
+                    <i class="fas fa-download icons"></i>
+                </footer>
+            </div>
+
+            <div class="cate">
+                <img src="img/b10.jpg" class="bimg">
+                <h3 class="bname"> كتاب إلكتروني </h3>
+                <p class="desc"> وصف الكتاب ي سعم </p>
+                <p class="price"> 19.99ر.س</p>
+                <p class="tax"> شامل الضريبة </p>
+                <p class="copies"> صيغ أخرى</p>
+                <footer class="toCart">
+                    <i class="fas fa-star icons"></i>
+                    <div class="fas fa-shopping-cart" id="redCart"> </div>
+                    <i class="fas fa-download icons"></i>
+                </footer>
+            </div>
+
+            <div class="cate">
+                <img src="img/b10.jpg" class="bimg">
+                <h3 class="bname"> كتاب إلكتروني </h3>
+                <p class="desc"> وصف الكتاب ي سعم </p>
+                <p class="price"> 19.99ر.س</p>
+                <p class="tax"> شامل الضريبة </p>
+                <p class="copies"> صيغ أخرى</p>
+                <footer class="toCart">
+                    <i class="fas fa-star icons"></i>
+                    <div class="fas fa-shopping-cart" id="redCart"> </div>
+                    <i class="fas fa-download icons"></i>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+    <div id="message" style="margin-top: 100px; text-align: center; font-size: 20px; display: none; ">
+        البحث خاطئ !
+        <br>
+        الأقسام التي توجد لدينا فقط:
+        <br>
+        (دين ، تاريخ ، روايات ، سياسة ، اقتصاد ، طبخ)
+        <br>
+        ابحثي من جديد ي مس ارادة وبطلي مغالطة :3
+    </div>
+
+
+
+    <!-- Footer -->
+    <footer dir="rtl">
+        <div class="container" id="first">
+            <div class="">انضم إلى نشرتنا البريدية </div>
+            <div class=""> خدمة العملاء</div>
+            <div class=""> خدمات جرير</div>
+            <div class=""> روابط سريعة </div>
+            <div class=""> عن جرير </div>
+        </div>
+
+        <div id="second">
+
+        </div>
+    </footer>
+
+    <script src="JS/app.js"> </script>
 </body>
+
 </html>

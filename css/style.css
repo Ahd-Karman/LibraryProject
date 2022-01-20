@@ -1,5 +1,10 @@
+*{
+    box-sizing: border-box;
+}
 body{
-    display: block;
+    display: flex;
+    flex-direction: column;
+    direction: rtl;
     font-size: smaller;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #42526e;
@@ -8,6 +13,19 @@ body{
 header {
     display: block;
 }
+
+h2{
+    justify-content: space-between;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
 /* Header 1 Style */
 
 a{
@@ -16,59 +34,206 @@ a{
 a:hover{
     color: #0052cc;
 }
-.container {
+
+#header1 {
+    background-color: ghostwhite;
+}
+
+.box{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-}
-
-
-.box{
-    margin: 5px;
-    border-right: 0.5px solid #eaedf4;
-    padding: 10px 20px;
+    align-items: center;
+    padding-right: 5px;
+    border-right: 0.2px solid #eaedf4;
 }
 
 
 
 /* Header 2 Style */ 
-#nav2{
-    margin: 5px;
-    justify-content: space-evenly;
-}
 #logo {
     width: 200px ;
     height: 100px ;
 }
-header input{
-    margin: 10px;
+nav input{
+    width: 60%;
+    padding: 0 16px 0 32px ;
     background-color: #eff2f7;
     border: 0.5px solid lightgrey;
-    width: 200px;
-    padding: 10px;
-    border-left: none;
-    border-right: none;
+    border-radius: 20px;
+    height: 40px;
+    margin-top: 20px;
 }
-header button{
+
+#cart{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 25px;
+    background-color: #ccc;
+}
+
+
+/*
+nav button {
+    display: flex;
     border: 0.5px solid lightgrey;
-    padding: 10px;
-    border-radius: 10%;
+    background-color: #eff2f7;
+    margin-right: -200px;
+    border-radius: 50%;
+    border-right: none;
+    border-bottom: none;
+    border-top: none;
+    height: 40px;
+    width: 40px;
+    margin-top: 30px;
+    z-index: 1;
 }
+
+#circle1 button{
+    display: flex;
+    flex-wrap: wrap;
+    width: 10px;
+    
+    margin: 8px;
+    border: none;
+    z-index: 1;
+} */
+
 
 /* Slider Style */
 .section {
     display: flex;
+
     overflow-x: auto;
     scroll-snap-type: x mandatory;
   }
 .section img {
     width: 100vw;
-    scroll-snap-align: start;
+    scroll-snap-align:center;
 }
 
+
+/* Main  Category Style */
+.category{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    padding:20px 50px 50px 50px;
+    box-shadow: 1px 1px 1px 1px  #888;
+    border-radius: 20px;
+
+    font-weight: bold;
+    font-size: 20px;
+    margin: 5px;
+}
+
+/* Sub Category Style */ 
+.cate{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+
+    border: 1px solid #ccc;
+    width: 200px;
+    height: 300px;
+
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.bimg{
+    display: flex;
+    width: 150px;
+    height: 250px;
+    
+}
+
+.bname{
+    display: flex;
+    margin-top: -1px;
+    color: black;
+}
+
+.desc{
+    font-size: 16px;
+    font-weight: lighter;
+    margin-top: -18px;
+    color: #42526e;
+    text-align: center;
+}
+.price{
+    color: red;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    margin: -5px 0 10px 0;
+}
+
+.tax{
+    font-size: 10px;
+    color: #ccc;
+    margin-top: -12px;
+    text-align: center;
+}
+
+.copies{
+    color: #42526e;
+    font-size: 16px;
+    margin-top: -12px;
+    text-align: center;
+}
+
+.copies::after{
+    content: ': كتاب مطبوع' ;
+    color: #2966ce;
+    text-align: center;
+    font-weight: bold;
+}
+
+.toCart{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border: 1px solid #ccc;
+    border-top: none;
+
+    position: relative;
+    z-index: 3;
+    width: 100%;
+
+    padding: 5px;
+}
+
+#redCart{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 25px;
+
+    margin: 5px;
+    color: whitesmoke;
+    background-color: rgb(221, 5, 5);
+}
+
+.icons{
+    margin-top: 20px;
+    font-size: 20px;
+}
 /* first Foorer Style */
 #first{
-    margin-top: 400px;
+    display: flex;
+    margin-top: 200px;
     align-items: flex-start;
     padding: 20px;
     height: 300px;
@@ -77,8 +242,35 @@ header button{
 }
 
 #second{
+    display: flex;
     height: 100px;
     background-color: #e6e6e6;
+}
+
+
+
+/* Mobile header Style */
+@media screen and (max-device-width: 780px) and (orientation: portrait){
+    .box{
+        display: none;
+    }
+
+    #logo{
+        width: 100px;
+        height: 50px;
+    }
+
+    *{
+        font-size: small;
+    }
+    nav input {
+        height: 28px;
+        border-radius: 16px ;
+        padding: 0 8px;
+        margin: 0;
+
+    }
+
 }
 
 
