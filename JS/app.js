@@ -57,3 +57,42 @@ type.addEventListener('keyup' , function(event){
     }
 });
 
+/* Slider */
+var slideIndex = 0 ;
+
+showSlides(slideIndex);
+
+
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+    slideIndex = n ;
+    showSlides(slideIndex);
+}
+
+function showSlides(n){
+    var slides = document.getElementsByClassName('slider') ;
+    var dot = document.getElementsByClassName('dot');
+    var i ;
+    for (i = 0 ; i < slides.length ; i++ ){
+        slides[i].style.display = "none";
+    }
+    for (i = 0 ; i < dot.length ; i++ ){
+        dot[i].className = dot[i].className.replace(" active" , "") ;
+    }
+
+    if(n > slides.length)
+        slideIndex = 1 ;
+
+    if (n < 1) {slideIndex = slides.length}
+
+    slides[slideIndex-1].style.display = "block" ;
+    dot[slideIndex-1].className += " active"; 
+
+  // setTimeout(showSlides, 3000) ;  /* لما استخدم الفنكشن ذي م اقدر اتحكم بحركة الصور في السلايدر كويس .. وقفتها */
+}
+
+
+

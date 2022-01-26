@@ -34,14 +34,44 @@
 
     <!-- Slider -->
     <div class="section">
-        <img src="images/Item1.webp" id="item1" />
-        <img src="images/Item2.jpg" id="item2" />
-        <img src="images/Item3.jpg" id="item3" />
-        <img src="images/Item4.jpg" id="item4" />
-        <img src="images/Item5.webp" id="item5" />
-        <img src="images/Item6.jpg" id="item6" />
+        <div class="slider">
+              <img src="images/Item1.webp" />
+        </div>
+
+        <div class="slider">
+            <img src="images/Item2.jpg" />
+        </div>
+
+        <div class="slider">
+            <img src="images/Item3.jpg" />
+        </div>
+
+        <div class="slider">
+            <img src="images/Item4.jpg" id="item4" />
+        </div>
+
+        <div class="slider">
+            <img src="images/Item5.webp" id="item5" />
+        </div>
+
+        <div class="slider">
+            <img src="images/Item6.jpg" id="item6" />
+        </div>
+        
+        <a class="prev" style="z-index: 3;" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" style="z-index: 3;" onclick="plusSlides(1)">&#10095;</a>
     </div>
 
+    
+
+    <div style="text-align: center; margin-top: -30px; z-index: 1;"> 
+        <span class="dot" onclick="currentSlide(0)"> </span>
+        <span class="dot" onclick="currentSlide(1)" > </span>
+        <span class="dot" onclick="currentSlide(2)" > </span>
+        <span class="dot" onclick="currentSlide(3)" > </span>
+        <span class="dot" onclick="currentSlide(4)" > </span>
+        <span class="dot" onclick="currentSlide(5)" > </span>
+    </div>
 
 
     <!-- Main Category -->

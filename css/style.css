@@ -105,6 +105,7 @@ nav button {
 
 
 /* Slider Style */
+/*
 .section {
     display: flex;
 
@@ -115,6 +116,60 @@ nav button {
     width: 100vw;
     scroll-snap-align:center;
 }
+*/
+
+.section{
+    display: flex;
+    width: 80vw;
+    position: relative;
+    margin-right: 100px;
+}
+
+.section img {
+    width: 80vw;
+}
+
+
+
+.slider{
+    display: none;
+}
+
+.dot{
+  display: inline-block;
+  cursor: pointer;
+  height: 12px;
+  width: 12px;
+  margin: 0 2px;
+  background-color: rgb(133, 128, 128);
+  transition: background-color 0.6s ease;
+}
+.active{
+  background-color: rgb(206, 206, 206);
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: grey;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 95%;
+    border-radius: 3px 0 0 3px;
+  }
+  
 
 
 /* Main  Category Style */
@@ -267,8 +322,21 @@ nav button {
         height: 28px;
         border-radius: 16px ;
         padding: 0 8px;
-        margin: 0;
+    }
 
+    #cart{
+        display: flex;
+        flex-wrap: wrap;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        font-size: 20px;
+        justify-self: left;
+        background-color: #ccc;
+        margin-right: 2px;
+    }
+    .section, .dot{
+        display: none;
     }
 
 }
