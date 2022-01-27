@@ -377,7 +377,7 @@ nav button {
     padding-right: 100px;
 }
 
-.login input {
+.login input , finput{
     display: flex;
     flex-wrap: wrap;
     margin: 5px ;
@@ -450,7 +450,7 @@ nav button {
     font-size: 20px;
     font-weight: bold;
 }
-.exit:hover , .log:hover , .main:hover , .white:hover , #child:hover , #btn:hover , .category:hover{
+.exit:hover , .log:hover , .main:hover , .white:hover , #child:hover , #btn:hover , .category:hover , #redCart:hover , .cate:hover{
     cursor: pointer;
 }
 

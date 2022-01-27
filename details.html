@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/fontawesome/css/all.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="container" id="header1">
+            <div class="fas fa-user box" id="show-btn"> <a class="log"> ادخل لحسابك أو سجل الآن </a> </div>
+            <a href="#">
+                <div class="box"> الرئيسية </div>
+            </a>
+            <a href="#">
+                <div class="box"> من نحن </div>
+            </a>
+            <a href="#">
+                <div class="box"> المساعدة </div>
+            </a>
+            <a href="#">
+                <div class="box" onclick="changeLang()"> English </div>
+            </a>
+        </nav>
+
+        <nav class="container">
+            <a href="#"> <img src="images/logo.svg" id="logo"> </a>
+            <input type="search" placeholder="البحث" dir="rtl" id="type">
+            <h2 class="fas fa-shopping-cart" id="cart"> </h2>
+        </nav>
+    </header>
+
+    <div id="modal">
+        <span class="exit" style="z-index: 11; " onclick="exit()"> &#x2717;</span>
+        <div class="login" dir="rtl">
+            <div>
+                <h2> تسجيل الدخول </h2>
+                <hr>
+            </div>
+
+            <div>
+                <form>
+                    <input type="text" placeholder="البريدالإلكتروني" />
+
+                    <div>
+                        <input type="password" placeholder="كلمة السر" style="position: relative;" />
+                        <span id="child" style="position: absolute; margin-top: -30px;"> نسيت ؟</span>
+                    </div>
+
+                    <button class="main"> تسجيل الدخول </button>
+
+
+                    <div class="signup">
+                        <p style="text-align: center; margin-top: 50px;"> ليس لديك حساب؟</p>
+                        <button class="main white" onclick="createAccount()"> إنشاء حساب جديد </button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Slider -->
+    <div class="section">
+        <div class="slider">
+            <img src="images/Item1.webp" />
+        </div>
+
+        <div class="slider">
+            <img src="images/Item2.jpg" />
+        </div>
+
+        <div class="slider">
+            <img src="images/Item3.jpg" />
+        </div>
+
+        <div class="slider">
+            <img src="images/Item4.jpg" id="item4" />
+        </div>
+
+        <div class="slider">
+            <img src="images/Item5.webp" id="item5" />
+        </div>
+
+        <div class="slider">
+            <img src="images/Item6.jpg" id="item6" />
+        </div>
+
+        <a class="prev" style="z-index: 3;" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" style="z-index: 3;" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+
+
+    <div style="text-align: center; margin-top: -30px; z-index: 1;">
+        <span class="dot" onclick="currentSlide(0)"> </span>
+        <span class="dot" onclick="currentSlide(1)"> </span>
+        <span class="dot" onclick="currentSlide(2)"> </span>
+        <span class="dot" onclick="currentSlide(3)"> </span>
+        <span class="dot" onclick="currentSlide(4)"> </span>
+        <span class="dot" onclick="currentSlide(5)"> </span>
+    </div>
+
+<script src="JS/app.js"> </script>
+</body>
+</html>

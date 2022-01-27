@@ -195,3 +195,15 @@ function changeLang(){
             document.getElementById('message').style.display="none";        
     }
 }
+
+/* Move from category to details */
+
+var cate = document.getElementsByClassName('cate') ;
+var i ; 
+
+for (i = 0 ; i < cate.length ; i++) {
+    /* لقد راودني النعاس لم استطع إكماله <\3 :3 */
+}
+cate.addEventListener("click" , function() {
+    alert("hi") ;
+});

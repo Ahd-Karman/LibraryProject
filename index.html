@@ -69,6 +69,7 @@
     </div>
 
     <!-- Slider -->
+    <!-- For Desktop Screen .. I tried so hard to make it responsive but no way-->
     <div class="section">
         <div class="slider">
             <img src="images/Item1.webp" />
@@ -149,20 +150,21 @@
     <div class="type" dir="rtl" id="religion">
         <h2 style=" color: #000 ;"> الكتب الدينية </h2>
         <div class="container" dir="rtl">
-            <div class="cate">
-                <img src="img/b10.jpg" class="bimg">
-                <h3 class="bname"> كتاب إلكتروني </h3>
-                <p class="desc"> وصف الكتاب ي سعم </p>
-                <p class="price"> 19.99ر.س</p>
-                <p class="tax"> شامل الضريبة </p>
-                <p class="copies"> صيغ أخرى</p>
-                <footer class="toCart">
-                    <i class="fas fa-star icons"></i>
-                    <div class="fas fa-shopping-cart" id="redCart"> </div>
-                    <i class="fas fa-download icons"></i>
-                </footer>
-            </div>
-
+            <a href="">
+                <div class="cate">
+                    <img src="img/b10.jpg" class="bimg">
+                    <h3 class="bname"> كتاب إلكتروني </h3>
+                    <p class="desc"> وصف الكتاب ي سعم </p>
+                    <p class="price"> 19.99ر.س</p>
+                    <p class="tax"> شامل الضريبة </p>
+                    <p class="copies"> صيغ أخرى</p>
+                    <footer class="toCart">
+                        <i class="fas fa-star icons"></i>
+                        <div class="fas fa-shopping-cart" id="redCart"> </div>
+                        <i class="fas fa-download icons"></i>
+                    </footer>
+                </div>
+            </a>
             <div class="cate">
                 <img src="img/b10.jpg" class="bimg">
                 <h3 class="bname"> كتاب إلكتروني </h3>
@@ -626,7 +628,16 @@
     <!-- Footer -->
     <footer dir="rtl">
         <div class="container" id="first">
-            <div class="">انضم إلى نشرتنا البريدية </div>
+            <div class="">
+                انضم إلى نشرتنا البريدية 
+                <hr>
+                <div style="width: 200px; height: 100px; background-color: grey; padding: 10px; margin: 10px; border-radius: 10px ;">
+                    <form>
+                        <input id="finput" type="text" placeholder="ادخل بريدك الالكتروني" style="border-radius: 5px; border: 1px solid gray; padding: 8px; font-size:small;" >
+                        <button class="main white" style="color: grey; background-color: rgb(231, 231, 231); margin: 5px 80px 2px 2px; padding-left: 20px; font-weight: bold; width: 100px; justify-content: left; align-content: center; "> اشتراك </button>
+                    </form>
+                </div>
+            </div>
             <div class=""> خدمة العملاء</div>
             <div class=""> خدمات جرير</div>
             <div class=""> روابط سريعة </div>
@@ -638,6 +649,7 @@
         </div>
     </footer>
 
+    <!-- 
     <div id="modal" style=" height: 150vh;">
         <span class="exit" style="z-index: 11; top: 150px; " onclick="exit()"> &#x2717;</span>
         <div class="login" dir="rtl">
@@ -684,6 +696,7 @@
             </div>
         </div>
     </div>
+-->
 
     <script src="JS/app.js"> </script>
 </body>
