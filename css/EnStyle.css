@@ -24,7 +24,7 @@ h2{
     justify-content: space-around;
     margin-left: 5px;
     margin-right: 5px;
-    direction: rtl;
+    direction: ltr;
 }
 
 /* Header 1 Style */
@@ -429,7 +429,7 @@ nav button {
 
 #modal{
     z-index: 10;
-    display: flex;
+    display: none;
     width: 100vw;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.5);
@@ -438,20 +438,6 @@ nav button {
     left: 0.1px;
     justify-content: center;
     align-items: center;
-
-    visibility: hidden;
-}
-
-.exit{
-    position: absolute;
-    top: 120px;
-    left: 350px;
-    color: rgb(255, 0, 0);
-    font-size: 20px;
-    font-weight: bold;
-}
-.exit:hover , .log:hover , .main:hover , .white:hover , #child:hover , #btn:hover , .category:hover{
-    cursor: pointer;
 }
 
 
